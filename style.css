@@ -1,0 +1,179 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond',Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    background-color: black;
+}
+
+/*hero*/
+
+nav {
+    background-color: black;
+    opacity: .75;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+nav .button {
+    color: whitesmoke;
+    font-size: 1.75rem;
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;        
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+        }
+        
+a.button:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    align-items: center;
+    justify-content: center;
+        }
+@media all and (max-width:30em){
+    a.button{
+    display:block;
+    margin:0.4em auto;
+        }
+}
+
+.hero {
+    background-image: url(../Resources/images/splash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30rem;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: rgb(255, 251, 0);
+}
+
+/*main*/
+
+.description {
+    color: whitesmoke;
+    text-align: center;
+    margin: 0 4rem;
+
+}
+
+.description p {
+    font-size: 2rem;
+    margin: 10rem;
+}
+
+.main {
+    border: 5px solid yellow;
+}
+
+.main {
+    margin-top: 8rem;
+    margin: 0.75rem;
+    color: whitesmoke;
+    display: grid;
+    grid-template-areas: 
+    "a a a b"
+    "a a a c"
+    "d e e e"
+    "f e e e"
+    "g g h h";
+    gap: 10px;
+}
+
+.container {
+    border: 1px solid yellow;
+    grid-area: a;
+    background-image: url('../Resources/images/redrising2.jpg');
+    height: 30rem;
+    max-height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.card-2 {
+    border: 1px solid yellow;
+    grid-area: b;
+    background-image: url('../Resources/images/lotr.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    background-position: center center;
+}
+
+.card-3 {
+    border: 1px solid yellow;
+    grid-area: c;
+    background-image: url('../Resources/images/card.2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.card-4 {
+    border: 1px solid yellow;
+    grid-area: d;
+    background-image: url("../Resources/images/card.3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.card-5 {
+    border: 1px solid yellow;
+    grid-area: e;
+    background-image: url('../Resources/images/wot.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 22rem;
+}
+.card-6 {
+    grid-area: f;
+    background-image: url("../Resources/images/card.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+
+}
+
+.card-7 {
+    grid-area: g;
+    background-image: url('../Resources/images/splash.2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 22rem;
+}
+
+.card-8 {
+    grid-area: h;
+    background-image: url('../Resources/images/card.1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    background-position: center;
+
+}
+
+footer {
+    height: 10rem;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+}
